@@ -24,7 +24,7 @@ const Header : React.FC<PropsHeader> = ({changePlanet}) => {
         <s.Title>the planets</s.Title>
         <s.Nav>
           {planets.map((planet, index) => {
-            return <LinkPlanet key={index} title={planet} id={(index+1).toString()}/>;
+            return <LinkPlanet key={index} event={changePlanet} title={planet} id={(index+1).toString()}/>;
           })}
         </s.Nav>
       </s.Content>

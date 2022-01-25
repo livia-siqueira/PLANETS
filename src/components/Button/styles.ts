@@ -1,11 +1,17 @@
 import styled from 'styled-components'
 
 
-export const Container = styled.button`
+interface Props {
+    isActive: boolean;
+}
+
+export const Container = styled.button<Props>`
     width: 100%;
     border: 0;
     color: ${({theme}) => theme.colors.white};
-    background-color: #6f2ed6;
+    background-color: ${({isActive}) => isActive ? '#6f2ed6' : 'transparent'};
+    border: 1px solid;
+    border-color: ${({isActive}) => isActive ? 'transparent' : 'white'};
     font-family: 'Antonio', sans-serif;
     height: 3rem;
     text-align: left;

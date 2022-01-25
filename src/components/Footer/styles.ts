@@ -8,4 +8,8 @@ export const Container = styled.div`
     justify-content: center;
     margin-bottom: 2rem;
 
+    @media screen and (max-width: 1110px) {
+        width: 90%;
+    }
+
 `

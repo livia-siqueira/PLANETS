@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-  width: 100vw;
+  width: 100%;
 `;
 
 export const Content = styled.section`
@@ -10,6 +10,12 @@ export const Content = styled.section`
   margin: 3rem auto;
   display: flex;
   flex-direction: row;
+
+  @media screen and (max-width: 1100px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
 `;
 
 export const ContainerImage = styled.div`
@@ -21,13 +27,28 @@ export const Image = styled.img``;
 
 export const Description = styled.aside`
   width: 30%;
+
+  @media screen and (max-width: 1100px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+  }
+
 `;
 
-export const TitleDescription = styled.p`
+export const Text = styled.p`
+  margin-top: 20px;
+`
+
+export const TitleDescription = styled.div`
   color: white;
   margin: 1rem 0 2rem 0;
   text-align: left;
   font-family: "Spartan", sans-serif;
+  @media screen and (max-width: 1100px) {
+      width: 50%;
+  }
 `;
 
 export const Details = styled.footer`
@@ -37,6 +58,10 @@ export const Details = styled.footer`
 export const ContainerButton = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 1100px) {
+      width: 40%;
+  }
 `;
 
 export const Name = styled.h1`

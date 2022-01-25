@@ -7,6 +7,10 @@ export const Container = styled.header`
   border-bottom: 1px solid white;
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 1100px) {
+    height: 10rem;
+  }
 `;
 
 export const Content = styled.div`
@@ -15,16 +19,19 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 1100px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
 `;
 
 export const Title = styled.h2`
   font-size: 2.5rem;
-  color: ${({theme}) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.white};
   font-variant: small-caps;
-  font-family: 'Antonio', sans-serif;
+  font-family: "Antonio", sans-serif;
   font-weight: 200;
 `;
 
-export const Nav = styled.nav`
-  
-`;
+export const Nav = styled.nav``;
