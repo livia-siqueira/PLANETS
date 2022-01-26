@@ -12,9 +12,9 @@ export const Content = styled.section`
   flex-direction: row;
 
   @media screen and (max-width: 1100px) {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -23,23 +23,28 @@ export const ContainerImage = styled.div`
   text-align: center;
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+margin-top: 80px;
+`;
 
 export const Description = styled.aside`
   width: 30%;
 
   @media screen and (max-width: 1100px) {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
 
+  @media screen and (max-width: 900px) {
+    justify-content: center;
+  }
 `;
 
 export const Text = styled.p`
   margin-top: 20px;
-`
+`;
 
 export const TitleDescription = styled.div`
   color: white;
@@ -47,11 +52,15 @@ export const TitleDescription = styled.div`
   text-align: left;
   font-family: "Spartan", sans-serif;
   @media screen and (max-width: 1100px) {
-      width: 50%;
+    width: 50%;
+  }
+  @media screen and (max-width: 900px) {
+    width: 60%;
+    text-align: center;
   }
 `;
 
-export const Details = styled.footer`
+export const Details = styled.div`
   width: 100%;
 `;
 
@@ -60,7 +69,16 @@ export const ContainerButton = styled.div`
   flex-direction: column;
 
   @media screen and (max-width: 1100px) {
-      width: 40%;
+    width: 40%;
+  }
+
+  @media screen and (max-width: 900px) {
+    position: absolute;
+    width: 100%;
+    flex-direction: row;
+    top: 80px;
+    justify-content: center;
+    align-items: center;
   }
 `;
 

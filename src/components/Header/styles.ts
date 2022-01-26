@@ -11,6 +11,9 @@ export const Container = styled.header`
   @media screen and (max-width: 1100px) {
     height: 10rem;
   }
+  @media screen and (max-width: 900px) {
+    height: 5rem;
+  }
 `;
 
 export const Content = styled.div`
@@ -24,7 +27,23 @@ export const Content = styled.div`
     justify-content: center;
     gap: 30px;
   }
+
+  @media screen and (max-width: 900px) {
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+ 
 `;
+
+export const Menu = styled.div` 
+  display: none;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+  }
+`
 
 export const Title = styled.h2`
   font-size: 2.5rem;
@@ -34,4 +53,26 @@ export const Title = styled.h2`
   font-weight: 200;
 `;
 
-export const Nav = styled.nav``;
+export const Nav = styled.nav`
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+`;
+
+
+export const ButtonMenu = styled.button`
+  background-color: transparent;
+  border: none;
+
+`
+
+export const NavMenu = styled.nav`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  background-color: white;
+`

@@ -1,5 +1,6 @@
 export interface Planet {
   id: string;
+  color: string;
   name: string;
   overview: {
     content: string;

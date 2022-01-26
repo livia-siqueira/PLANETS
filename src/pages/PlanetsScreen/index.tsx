@@ -50,18 +50,21 @@ const PlanetsScreen: React.FC = () => {
               event={changeImage}
               number={1}
               isActive={imageActive === 1}
+              color={planet?.color}
             />
             <Button
               title="02 INTERNAL STRUCTURE"
               event={changeImage}
               number={2}
               isActive={imageActive === 2}
+              color={planet?.color}
             />
             <Button
               title="03 SURFACE GEOLOGY"
               event={changeImage}
               number={3}
               isActive={imageActive === 3}
+              color={planet?.color}
             />
           </s.ContainerButton>
         </s.Description>

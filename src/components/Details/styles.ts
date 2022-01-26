@@ -14,6 +14,22 @@ export const Container = styled.div`
   & + & {
     margin-left: 1rem;
   }
+  @media screen and (max-width: 900px) {
+      width: 80%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      & + & {
+        margin: 0;
+        margin-top: 20px;
+        
+    }
+
+  }
+
+
+ 
 `;
 
 export const Title = styled.h4`

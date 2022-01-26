@@ -12,7 +12,7 @@ export async function allPlanets() {
 
 export async function namesPlanets() {
   const { planets }: APIPlanet = await allPlanets();
-  const names = planets.map((planet: Planet) => {
+  const names : string[]= planets.map((planet: Planet) => {
     return planet.name;
   });
   return names;
@@ -20,7 +20,7 @@ export async function namesPlanets() {
 
 export async function getPlanetById(id: string) {
   const { planets }: APIPlanet = await allPlanets();
-  const planet = planets.find((prev) => {
+  const planet : Planet | undefined = planets.find((prev: Planet) => {
     return prev.id === id;
   });
   return planet;
